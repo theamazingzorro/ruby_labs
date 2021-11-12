@@ -1,13 +1,15 @@
 def convert_to_roman(number)
-	result = char_n_times('I', number)
-
-	return result
-end
-
-def char_n_times(char, n)
 	result = ''
-	for i in 1..n
-		result += char
+
+	numerals = ['C', 'XC', 'L', 'XL', 'X', 'IX', 'V', 'IV', 'I']
+	numbers = [100, 90, 50, 40, 10, 9, 5, 4, 1]
+
+	for i in 0..numerals.length-1
+		while number >= numbers[i]
+			result += numerals[i]
+			number -= numbers[i]
+		end
 	end
+
 	return result
 end
