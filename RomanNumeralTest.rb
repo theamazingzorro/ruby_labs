@@ -41,4 +41,36 @@ describe 'Roman Numerals' do
 	it 'converts 100 to C' do
 		expect(convert_to_roman(100)).to eq 'C'
 	end
+
+	it 'converts 400 to CD' do
+		expect(convert_to_roman(400)).to eq 'CD'
+	end
+
+	it 'converts 500 to D' do
+		expect(convert_to_roman(500)).to eq 'D'
+	end
+
+	it 'converts 900 to CM' do
+		expect(convert_to_roman(900)).to eq 'CM'
+	end
+
+	it 'converts 1000 to M' do
+		expect(convert_to_roman(1000)).to eq 'M'
+	end
+
+	it 'converts 3000 to MMM' do
+		expect(convert_to_roman(3000)).to eq 'MMM'
+	end
+
+	it 'converts 369 to CCCLXIX' do
+		expect(convert_to_roman(369)).to eq 'CCCLXIX'
+	end
+
+	it 'converts 1998 to MCMXCVIII' do
+		expect(convert_to_roman(1998)).to eq 'MCMXCVIII'
+	end
+
+	it 'converts 2751 to MMDCCLI' do
+		expect(convert_to_roman(2751)).to eq 'MMDCCLI'
+	end
 end
